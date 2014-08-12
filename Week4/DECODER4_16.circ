@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+      <a name="appear" val="right"/>
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="2"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="0"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1">
+    <tool name="NAND Gate">
+      <a name="inputs" val="2"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#DECODER2_4.circ" name="7"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M217,68 Q221,78 225,68" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="162" stroke="#000000" stroke-width="2" width="120" x="161" y="66"/>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="215" y="84">Decoder 4:16</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="173" y="103">A0</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="173" y="113">A1</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="173" y="133">A3</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="173" y="123">A2</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="268" y="83">Y1</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="268" y="94">Y2</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="268" y="73">Y0</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="268" y="104">Y3</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="267" y="125">Y5</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="267" y="135">Y6</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="267" y="115">Y4</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="267" y="145">Y7</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="267" y="164">Y9</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="264" y="174">Y10</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="267" y="154">Y8</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="264" y="184">Y11</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="265" y="203">Y13</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="264" y="214">Y14</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="264" y="195">Y12</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="265" y="224">Y15</text>
+      <text font-family="SansSerif" font-size="9" text-anchor="middle" x="175" y="183">EN</text>
+      <circ-port height="8" pin="60,160" width="8" x="156" y="96"/>
+      <circ-port height="8" pin="60,190" width="8" x="156" y="106"/>
+      <circ-port height="8" pin="60,220" width="8" x="156" y="116"/>
+      <circ-port height="8" pin="60,250" width="8" x="156" y="126"/>
+      <circ-port height="8" pin="60,310" width="8" x="156" y="176"/>
+      <circ-port height="10" pin="560,100" width="10" x="275" y="65"/>
+      <circ-port height="10" pin="560,120" width="10" x="275" y="75"/>
+      <circ-port height="10" pin="560,140" width="10" x="275" y="85"/>
+      <circ-port height="10" pin="560,160" width="10" x="275" y="95"/>
+      <circ-port height="10" pin="560,180" width="10" x="275" y="105"/>
+      <circ-port height="10" pin="560,200" width="10" x="275" y="115"/>
+      <circ-port height="10" pin="560,220" width="10" x="275" y="125"/>
+      <circ-port height="10" pin="560,240" width="10" x="275" y="135"/>
+      <circ-port height="10" pin="560,260" width="10" x="275" y="145"/>
+      <circ-port height="10" pin="560,280" width="10" x="275" y="155"/>
+      <circ-port height="10" pin="560,300" width="10" x="275" y="165"/>
+      <circ-port height="10" pin="560,320" width="10" x="275" y="175"/>
+      <circ-port height="10" pin="560,340" width="10" x="275" y="185"/>
+      <circ-port height="10" pin="560,360" width="10" x="275" y="195"/>
+      <circ-port height="10" pin="560,380" width="10" x="275" y="205"/>
+      <circ-port height="10" pin="560,400" width="10" x="275" y="215"/>
+      <circ-anchor facing="east" height="6" width="6" x="207" y="217"/>
+    </appear>
+    <wire from="(490,280)" to="(490,350)"/>
+    <wire from="(450,120)" to="(510,120)"/>
+    <wire from="(340,140)" to="(340,270)"/>
+    <wire from="(60,190)" to="(310,190)"/>
+    <wire from="(450,130)" to="(500,130)"/>
+    <wire from="(330,300)" to="(330,500)"/>
+    <wire from="(240,290)" to="(350,290)"/>
+    <wire from="(550,400)" to="(550,490)"/>
+    <wire from="(450,100)" to="(560,100)"/>
+    <wire from="(450,250)" to="(550,250)"/>
+    <wire from="(450,490)" to="(550,490)"/>
+    <wire from="(540,220)" to="(540,240)"/>
+    <wire from="(330,500)" to="(370,500)"/>
+    <wire from="(70,250)" to="(70,280)"/>
+    <wire from="(450,240)" to="(540,240)"/>
+    <wire from="(450,480)" to="(540,480)"/>
+    <wire from="(530,360)" to="(530,470)"/>
+    <wire from="(340,140)" to="(370,140)"/>
+    <wire from="(70,280)" to="(160,280)"/>
+    <wire from="(350,260)" to="(370,260)"/>
+    <wire from="(350,380)" to="(370,380)"/>
+    <wire from="(310,190)" to="(310,230)"/>
+    <wire from="(520,180)" to="(520,220)"/>
+    <wire from="(80,220)" to="(80,270)"/>
+    <wire from="(450,230)" to="(530,230)"/>
+    <wire from="(450,470)" to="(530,470)"/>
+    <wire from="(480,260)" to="(560,260)"/>
+    <wire from="(500,300)" to="(500,360)"/>
+    <wire from="(450,220)" to="(520,220)"/>
+    <wire from="(290,340)" to="(290,460)"/>
+    <wire from="(290,220)" to="(290,340)"/>
+    <wire from="(450,460)" to="(520,460)"/>
+    <wire from="(490,280)" to="(560,280)"/>
+    <wire from="(310,470)" to="(370,470)"/>
+    <wire from="(310,350)" to="(370,350)"/>
+    <wire from="(310,230)" to="(370,230)"/>
+    <wire from="(310,110)" to="(370,110)"/>
+    <wire from="(550,240)" to="(550,250)"/>
+    <wire from="(450,370)" to="(510,370)"/>
+    <wire from="(500,300)" to="(560,300)"/>
+    <wire from="(500,160)" to="(560,160)"/>
+    <wire from="(510,320)" to="(560,320)"/>
+    <wire from="(450,360)" to="(500,360)"/>
+    <wire from="(510,140)" to="(560,140)"/>
+    <wire from="(520,110)" to="(520,120)"/>
+    <wire from="(520,340)" to="(560,340)"/>
+    <wire from="(240,280)" to="(350,280)"/>
+    <wire from="(350,260)" to="(350,280)"/>
+    <wire from="(510,120)" to="(510,140)"/>
+    <wire from="(310,110)" to="(310,190)"/>
+    <wire from="(530,200)" to="(530,230)"/>
+    <wire from="(480,260)" to="(480,340)"/>
+    <wire from="(500,130)" to="(500,160)"/>
+    <wire from="(60,160)" to="(290,160)"/>
+    <wire from="(60,310)" to="(160,310)"/>
+    <wire from="(450,350)" to="(490,350)"/>
+    <wire from="(520,180)" to="(560,180)"/>
+    <wire from="(520,120)" to="(560,120)"/>
+    <wire from="(240,270)" to="(340,270)"/>
+    <wire from="(350,290)" to="(350,380)"/>
+    <wire from="(540,380)" to="(560,380)"/>
+    <wire from="(450,340)" to="(480,340)"/>
+    <wire from="(540,220)" to="(560,220)"/>
+    <wire from="(240,300)" to="(330,300)"/>
+    <wire from="(530,360)" to="(560,360)"/>
+    <wire from="(530,200)" to="(560,200)"/>
+    <wire from="(540,380)" to="(540,480)"/>
+    <wire from="(60,220)" to="(80,220)"/>
+    <wire from="(520,340)" to="(520,460)"/>
+    <wire from="(80,270)" to="(160,270)"/>
+    <wire from="(290,460)" to="(370,460)"/>
+    <wire from="(290,340)" to="(370,340)"/>
+    <wire from="(290,220)" to="(370,220)"/>
+    <wire from="(290,100)" to="(370,100)"/>
+    <wire from="(510,320)" to="(510,370)"/>
+    <wire from="(60,250)" to="(70,250)"/>
+    <wire from="(290,160)" to="(290,220)"/>
+    <wire from="(290,100)" to="(290,160)"/>
+    <wire from="(450,110)" to="(520,110)"/>
+    <wire from="(310,350)" to="(310,470)"/>
+    <wire from="(310,230)" to="(310,350)"/>
+    <wire from="(550,400)" to="(560,400)"/>
+    <wire from="(550,240)" to="(560,240)"/>
+    <comp lib="0" loc="(560,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y6"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,380)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y14"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y15"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="7" loc="(420,280)" name="main"/>
+    <comp lib="0" loc="(560,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y7"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y13"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y9"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,160)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A0"/>
+    </comp>
+    <comp lib="0" loc="(60,310)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="EN"/>
+    </comp>
+    <comp lib="0" loc="(560,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y12"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="7" loc="(210,330)" name="main"/>
+    <comp lib="7" loc="(420,160)" name="main"/>
+    <comp lib="0" loc="(560,260)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y8"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y4"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y5"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,320)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y11"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(560,300)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y10"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A2"/>
+    </comp>
+    <comp lib="7" loc="(420,400)" name="main"/>
+    <comp lib="0" loc="(60,250)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A3"/>
+    </comp>
+    <comp lib="0" loc="(560,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+    </comp>
+    <comp lib="7" loc="(420,520)" name="main"/>
+    <comp lib="0" loc="(560,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+</project>
